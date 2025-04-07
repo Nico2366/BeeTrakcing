@@ -1,5 +1,13 @@
-# 🐝 Studying Honeybees’ Landing on Flowers: An Experimental Setup
-### _Nicolas Salvage, Antoine HP Morice, Julien R Serres_
+<h1 align="center">🐝 Studying Honeybees’ Landing on Flowers</h1>
+<h3 align="center">An Experimental Setup for Vision-Based 3D Trajectory Tracking in MATLAB</h3>
+
+<p align="center">
+  <b>Nicolas Salvage</b>, <b>[Ton Nom]</b>, <b>[Autres Co-auteurs]</b>  
+  <br>
+  [Votre institution ici]  
+  <br>
+  <i>2025 – Project Highlight</i>
+</p>
 
 This repository contains the **MATLAB-based technical solution** for a bio-inspired vision tracking system.  
 🎯 **Objective**: Reconstruct the 3D trajectory of a landing honeybee using stereo vision and deep learning-based detection & tracking algorithms.
@@ -28,13 +36,11 @@ This experimental setup replicates the landing of a honeybee on a moving flower 
 ```
 ---
 🧰 Requirements
-MATLAB R2023a or later
 
-Computer Vision Toolbox™
-
-YOLO (PyTorch export for inference compatibility)
-
-BYTETrack dependencies (Python-based, bridged to MATLAB)
+- MATLAB R2023a or later
+- Computer Vision Toolbox™
+- YOLO (You Only Look Once, Redmon et al. 2016) 
+- BYTETrack.yaml 
 
 ---
 
