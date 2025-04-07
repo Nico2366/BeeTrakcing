@@ -1,4 +1,12 @@
+%...................................................................
+% Author : Nicolas Salvage
+% Last update : 07/04/2025
+% function : Lance la calibration et la reconstruction 3D de l'arène
+% et des trajectoires. 
+%...................................................................
+
 % pyrunfile("YOLO_BeeTracking.py")
+
 close all
 clear 
 clc

@@ -1,4 +1,9 @@
-%% Vidéo Corriger 
+%...................................................................
+% Author : Nicolas Salvage
+% Last update : 07/04/2025
+% function : pre-traitement des vidéo de calibration 
+%...................................................................
+
 
 function Traitement_Image()
     
@@ -13,7 +18,7 @@ function Traitement_Image()
         vidReader = VideoReader([videoFile(i).folder '\' videoFile(i).name]);
         
         if contains(videoFile(i).name, 'camera-1')
-            
+
             outputVideoFile = 'calibration\camera-1_corrigee.mp4';
            
         elseif contains(videoFile(i).name, 'camera-2')
