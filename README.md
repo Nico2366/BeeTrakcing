@@ -9,7 +9,8 @@
   <i>2025 – Project Highlight</i>
 </p>
 
-This repository contains the **MATLAB-based technical solution** for a bio-inspired vision tracking system.  
+---
+
 🎯 **Objective**: Reconstruct the 3D trajectory of a landing honeybee using stereo vision and deep learning-based detection & tracking algorithms.
 
 ---
