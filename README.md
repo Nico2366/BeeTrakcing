@@ -2,9 +2,9 @@
 <h3 align="center">An Experimental Setup for Vision-Based 3D Trajectory Tracking in MATLAB</h3>
 
 <p align="center">
-  <b>Nicolas Salvage</b>, <b>[Ton Nom]</b>, <b>[Autres Co-auteurs]</b>  
+  <b>Nicolas Salvage</b>, <b>Antoine HP Morice</b>, <b>Julien R Serres</b>  
   <br>
-  [Votre institution ici]  
+  Aix Marseille Univ, CNRS, ISM, Marseille,France  
   <br>
   <i>2025 – Project Highlight</i>
 </p>
