@@ -24,8 +24,8 @@ This experimental setup replicates the landing of a honeybee on a moving flower 
 📄 ImageDecoupe.m      # Frame pre-processing & cropping
 📄 README.md
 
+```
 ---
-
 🧰 Requirements
 MATLAB R2023a or later
 
@@ -34,6 +34,8 @@ Computer Vision Toolbox™
 YOLO (PyTorch export for inference compatibility)
 
 BYTETrack dependencies (Python-based, bridged to MATLAB)
+
+---
 
 👤 Credits
 Project Lead: Nicolas Salvage
