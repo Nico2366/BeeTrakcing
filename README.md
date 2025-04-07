@@ -25,14 +25,21 @@ This experimental setup replicates the landing of a honeybee on a moving flower 
 ## 📂 Repository Structure
 
 ```bash
-📁 3D_arene/           # Arena video
-📁 calibration/        # Calibration video
-📁 trajectoire_csv/    # Trajectory files
-📄 TrackingYOLO.m      # YOLO object detection & tracking
-📄 TrackingInsect.m    # Insect-specific tracking logic
-📄 reconstruction3D.m  # 3D point reconstruction from 2D detections
-📄 ImageDecoupe.m      # Frame pre-processing & cropping
+📁 3D_arene/                 # Arena videos&images
+  📁 camera-1/               # camera-1 images
+  📁 camera-2/               # camera-2 images
+📁 calibration/              # Calibration videos&images
+  📁 camera-1/               # camera-1 images
+  📁 camera-2/               # camera-2 images
+📁 trajectoire_csv/          # Trajectory files
+📄 Arena_Reconstruction.m    # Flying arena reconstruction function
+📄 Calibration_Stereo.m      # Stereo vision Calibration function
+📄 ImageDecoupe.m            # Recovering key images for calibration function
 📄 README.md
+📄 reconstruction3D.m        # figure function of 3D reconstruction of the arena
+📄 TrackingInsect.m          # Starts calibration and 3D reconstruction of the arena and trajectories   
+📄 TrackingYOLO.m            # Yolo trajectories triangulation function       
+📄Traitement_Image.m         # pre-processing of calibration videos function
 
 ```
 ---
