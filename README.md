@@ -1,8 +1,16 @@
-🐝 Studying Honeybees’ Landing on Flowers: An Experimental Setup
-This repository contains the MATLAB-based technical solution for a bio-inspired vision tracking system. Our goal was to reconstruct the 3D trajectory of a landing honeybee — modeled here by a fake 3D-printed bee — using high-speed cameras and deep learning-based detection and tracking algorithms.
+# 🐝 Studying Honeybees’ Landing on Flowers: An Experimental Setup
 
-📌 Project Overview
-Landing behavior in honeybees can provide valuable insights for designing robust autonomous landing strategies for aerial robots. This experimental setup replicates the landing of a honeybee on a flower within a controlled flight arena, using vision-based tools for accurate 3D reconstruction.
+This repository contains the **MATLAB-based technical solution** for a bio-inspired vision tracking system.  
+🎯 **Objective**: Reconstruct the 3D trajectory of a landing honeybee — modeled by a 3D-printed fake bee — using high-speed cameras and deep learning-based detection & tracking algorithms.
+
+---
+
+## 🚀 Project Overview
+
+Landing behavior in honeybees can inspire robust autonomous landing strategies for aerial robots.  
+This experimental setup replicates the landing of a honeybee on a moving flower within a controlled flight arena, using stereo vision and deep learning techniques for accurate 3D reconstruction.
+
+---
 
 📁 Repository Structure
 .
