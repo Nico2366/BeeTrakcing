@@ -12,13 +12,19 @@ This experimental setup replicates the landing of a honeybee on a moving flower 
 
 ---
 
-📁 Repository Structure
-.
-├── 3D_Arena/               # Video and images for Arena reconstruction
-├── calibration/            # Video and images for Calibration
-├── trajectoire_csv/        # .csv files of trajectory         
-├── YOLO/                   # YOLO files
-└── README.md
+## 📂 Repository Structure
+
+```bash
+📁 3D_arene/           # Arena reconstruction files
+📁 calibration/        # Calibration scripts & checkerboard data
+📁 trajectoire_csv/    # Ground-truth trajectory files
+📄 TrackingYOLO.m      # YOLO object detection & tracking
+📄 TrackingInsect.m    # Insect-specific tracking logic
+📄 reconstruction3D.m  # 3D point reconstruction from 2D detections
+📄 ImageDecoupe.m      # Frame pre-processing & cropping
+📄 README.md
+
+---
 
 🧰 Requirements
 MATLAB R2023a or later
