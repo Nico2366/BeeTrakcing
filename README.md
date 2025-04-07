@@ -6,7 +6,7 @@
   <br>
   Aix Marseille Univ, CNRS, ISM, Marseille,France  
   <br>
-  <i>2025 – Project Highlight</i>
+  <i>2025 – Project</i>
 </p>
 
 ---
