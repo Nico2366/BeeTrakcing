@@ -15,13 +15,6 @@
 
 ---
 
-## 🚀 Project Overview
-
-Landing behavior in honeybees can inspire robust autonomous landing strategies for aerial robots.  
-This experimental setup replicates the landing of a honeybee on a moving flower within a controlled flight arena, using stereo vision and deep learning techniques for accurate 3D reconstruction.
-
----
-
 ## 📂 Repository Structure
 
 ```bash
