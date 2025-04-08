@@ -12,6 +12,7 @@ function Traitement_Image()
 
     % Lister tous les fichiers vidéo dans le dossier
     videoFile = dir(fullfile(videoFolder, '*.MP4'));
+    num = ['1' '2'];
 
     for i = 1:length(videoFile)  
 
@@ -52,8 +53,14 @@ function Traitement_Image()
             writeVideo(vidWriter, correctedFrame);
         end
         
+        
         % Parcourir toutes les frames de la vidéo
         frameIndex = 1;
+
+        totalFrames = vidReader.NumFrames;
+        expectedImages = totalFrames;
+        f = waitbar(0, ['pré-traitement des vidéo - Caméra ' num(i)]);
+
         while hasFrame(vidReader)
             currFrame = readFrame(vidReader);
             grayCurrFrame = rgb2gray(currFrame); % Frame actuelle en niveaux de gris
@@ -84,6 +91,9 @@ function Traitement_Image()
             writeVideo(vidWriter, correctedFrame);
         
             frameIndex = frameIndex + 1;
+            % Mise à jour de la barre de progression
+            waitbar(frameIndex / expectedImages, f,, ...
+                    sprintf('Caméra %s - %d / %d images', num(i), frameIndex, expectedImages));
         end
         
         % Fermer l'objet VideoWriter
@@ -112,7 +122,8 @@ function Traitement_Image()
         sgtitle('Analyse des variations entre frames prétraitées');
 
     end
-
+    
+    close(f); % Fermer la barre de progression à la fin de la vidéo
     fprintf('Correction terminée');
 
 end

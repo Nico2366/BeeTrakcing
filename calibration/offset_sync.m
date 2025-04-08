@@ -119,8 +119,8 @@ end
 fprintf('✅ Affichage des images clés terminé.\n');
 
 % Créer un objet VideoWriter pour réécrire la première vidéo après décalage
-outputVideoPath1 = [videoName1 '_sync.MP4'];
-outputVideoPath2 = [videoName2 '_sync.MP4'];
+outputVideoPath1 = [ videoName1 '_sync.MP4'];
+outputVideoPath2 = [ videoName2 '_sync.MP4'];
 
 outputVideo1 = VideoWriter(outputVideoPath1, 'MPEG-4');
 outputVideo2 = VideoWriter(outputVideoPath2, 'MPEG-4');
