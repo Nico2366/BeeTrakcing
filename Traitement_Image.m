@@ -92,7 +92,7 @@ function Traitement_Image()
         
             frameIndex = frameIndex + 1;
             % Mise à jour de la barre de progression
-            waitbar(frameIndex / expectedImages, f,, ...
+            waitbar(frameIndex / expectedImages, f, ...
                     sprintf('Caméra %s - %d / %d images', num(i), frameIndex, expectedImages));
         end
         

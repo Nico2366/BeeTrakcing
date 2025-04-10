@@ -16,16 +16,16 @@ videoPath2 = fullfile(videoPath2, videoFile2);
 % Exécuter FFmpeg avec Conda via 'conda run'
 disp('Activation de Conda et exécution de FFmpeg');
 condaPath = 'C:\Users\Nicolas\anaconda3\Scripts\conda.exe';  % Remplace par le chemin correct vers Conda sur ton PC
-command1 = [condaPath, ' run -n ultralytics-env ffprobe -v error -select_streams d:0 -show_entries stream_tags=timecode -of default=noprint_wrappers=1 "' videoPath1 '" > "C:\Users\Nicolas\Nextcloud\Matlab\Reconstruction3D\timecode.txt"'];
-command2 = [condaPath, ' run -n ultralytics-env ffprobe -v error -select_streams d:0 -show_entries stream_tags=timecode -of default=noprint_wrappers=1 "' videoPath2 '" > "C:\Users\Nicolas\Nextcloud\Matlab\Reconstruction3D\timecode2.txt"'];
+command1 = [condaPath, ' run -n ultralytics-env ffprobe -v error -select_streams d:0 -show_entries stream_tags=timecode -of default=noprint_wrappers=1 "' videoPath1 '" > "timecode.txt"'];
+command2 = [condaPath, ' run -n ultralytics-env ffprobe -v error -select_streams d:0 -show_entries stream_tags=timecode -of default=noprint_wrappers=1 "' videoPath2 '" > "timecode2.txt"'];
 
 % Exécuter les commandes
 system(command1);
 system(command2);
 
 % Définir les chemins des fichiers timecode
-cheminFichier1 = 'C:\Users\Nicolas\Nextcloud\Matlab\Reconstruction3D\timecode.txt';
-cheminFichier2 = 'C:\Users\Nicolas\Nextcloud\Matlab\Reconstruction3D\timecode2.txt';
+cheminFichier1 = 'timecode.txt';
+cheminFichier2 = 'timecode2.txt';
 
 % Charger les vidéos
 video1 = VideoReader(videoPath1);

@@ -11,7 +11,7 @@ clear
 clc
 
 % Pré-traitement vidéo 
-%Traitement_Image();
+Traitement_Image();
 
 % Recupération des images clé pour calibration
 ImageDecoupe(1);

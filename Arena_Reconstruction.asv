@@ -178,9 +178,7 @@ function [Average_Reference_point,Reference_angle] = Arena_Reconstruction(stereo
         hsv = rgb2hsv(image);
     
         % Création du masque avec les mêmes seuils HSV  (1=Hue, 2=Saturation, 3=Value)
-        % Detection du vert
         %mask = (hsv(:,:,1) >= 0.17 & hsv(:,:,1) <= 0.35) & (hsv(:,:,2) >= 0.3 & hsv(:,:,2) <= 1) & (hsv(:,:,3) >= 0.1 & hsv(:,:,3) <= 1);
-        
         %Detection du rouge 
         mask = ((hsv(:,:,1) >= 0 & hsv(:,:,1) <= 0.05) | (hsv(:,:,1) >= 0.95 & hsv(:,:,1) <= 1))  & (hsv(:,:,2) >= 0.3 & hsv(:,:,2) <= 1) & (hsv(:,:,3) >= 0.1 & hsv(:,:,3) <= 1);
 
