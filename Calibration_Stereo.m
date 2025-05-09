@@ -4,7 +4,7 @@
 % function : Calibration stereo vision function 
 %...................................................................
 
-function [stereoParams,theta_x,theta_y,theta_z] = Calibration_Stereo()
+function [stereoParams] = Calibration_Stereo()
 
 
     % 1. Sélection des dossiers d'images
@@ -91,8 +91,7 @@ function [stereoParams,theta_x,theta_y,theta_z] = Calibration_Stereo()
     disp('Translation entre les caméras :');
     disp(stereoParams.TranslationOfCamera2);
     
-    
-    
+
     % 7. Rectification des images
     
     I1 = readimage(leftImages, 1);
